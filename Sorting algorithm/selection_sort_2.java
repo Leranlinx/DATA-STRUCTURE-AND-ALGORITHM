@@ -1,21 +1,25 @@
 public class selection_sort_2 {
-    void Selection_sort_2 (int arr[], int n){
+    public static void printarray (int [] arr){
+        for (int i =0 ;i<arr.length ; i++){
+            System.out.println(arr[i]+"");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int [] arr = {43,43,455,3444,33};
+        int n = arr.length ; 
 
-        int i , j , index_min,temp ;
-
-        for (i =0 ; i<n-1 ;i++){
-            index_min = i ;
-            for (j =i+1 ;j<n ; j++){
-                if (arr[j]< arr[index_min]){
-                    index_min = i ;
+        for (int i =0 ; i<n-1; i++){
+            int index_min = i ;
+            for (int j = 0 ; j<i ; j ++){
+                if (arr[j] < arr[index_min]){
+                    index_min = arr[j];
                 }
             }
-
-            if (index_min != i){
-                temp = arr[i];
-                arr[i] =arr[index_min];
-                arr[index_min] = temp;
-            }
+            int temp = arr[i];
+            arr[i]= index_min;
+            index_min  = temp;
         }
+        printarray(arr);
     }
 }

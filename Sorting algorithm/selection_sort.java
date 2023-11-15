@@ -27,11 +27,11 @@ public class selection_sort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {64, 25, 12, 22, 11};
-        System.out.println("Original array: " + Arrays.toString(arr));
+        // int[] arr = {64, 25, 12, 22, 11};
+        // System.out.println("Original array: " + Arrays.toString(arr));
 
-        selectionSort(arr);
+        // selectionSort(arr);
 
-        System.out.println("Sorted array: " + Arrays.toString(arr));
+        // System.out.println("Sorted array: " + Arrays.toString(arr));
     }
 }
